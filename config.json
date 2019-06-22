@@ -1,0 +1,47 @@
+{
+    "baseurl": "https://3dprint.nathangrove.com",
+    "title": "3D Printz",
+    "canonifyurls": true,
+    "paginate": 10,
+    "languageCode": "en-us",
+    "copyright": "2019  Nathan Grove",
+    "params": {
+      "DateForm": "Mon, Jan 2, 2006",
+      "Description": "A 3D Printer's Blog",
+      "Author": "Nathan Grove",
+      "email": "nathan@nathangrove.com",
+      "postSummariesFrontPage": 3,
+      "showReadTime": true,
+      "customCSS": [
+          "/css/custom.css"
+      ],
+      "authors": { 
+        "nathan": {
+          "name": "Nathan Grove",
+          "image": "/img/authors/nathan.jpg",
+          "about": "Father, Web Developer, Electronics hobbiest."
+        }
+      },
+      "social": [{
+        "title": "facebook",
+        "url": "https://www.facebook.com/ngrove78"
+      },{
+        "title": "github",
+        "url": "https://github.com/nathangrove"
+      },{
+          "title": "twitter",
+          "url": "https://twitter.com/njgcm7"
+      }]
+    },
+    "menu": {
+      "main": [{
+          "name": "Home",
+          "url": "/",
+          "weight": -200
+       },{
+        "name": "Archives",
+        "url": "/post/",
+        "weight": -180
+      }]
+    }
+  }

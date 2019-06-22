@@ -1,0 +1,41 @@
+baseurl = "https://3dprint.nathangrove.com"
+title = "3D Printz"
+canonifyurls = true
+paginate = 10
+# theme = "simple-blog"
+languageCode = "en-us"
+copyright = "copyright 2019  Nathan Grove"
+#googleAnalytics = "UA-123-45" # delete or comment to disable Google Analytics JS generation
+#disqusShortname = "3DPrintz" #delete or comment to disable Disqus comments
+
+[author]
+  name = "Nathan Grove"
+
+[params]
+  DateForm = "Mon, Jan 2, 2006"
+  Description = "A 3D Printer's Blog"
+  Author = "Nathan Grove"
+  email = "nathan@nathangrove.com" #Remove this line if you would prefer not to use an email button in the footer.
+  postSummariesFrontPage = 4 #Number of post summaries to show on front page, comment out to allow default(4)
+  showReadTime = true #set to false to exclude read time from header of post
+  # This will load all the CSS defined in the list
+  # customCSS = ["<absolute path to CSS>", "/static/css/test.css", "<or just load it off the internet>"]
+  
+[[params.social]]
+  title = "twitter"
+  url = "https://twitter.com/njgcm7"
+[[params.social]]
+  title = "github"
+  url = "https://github.com/nathangrove"
+[[params.social]]
+  title = "facebook"
+  url = "https://www.facebook.com/ngrove78"
+
+[[menu.main]]
+  name = "home"
+  url = "/"
+  weight = -200
+[[menu.main]]
+  name = "Archives"
+  url = "/post/"
+  weight = -180

@@ -1,0 +1,53 @@
+{{ partial "header.html" .}}
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    {{ if isset .Params "image" }}<header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.image }}')">
+      {{ else }}<header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/post-bg.jpg')">
+    {{ end }}
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>{{ .Title }}</h1>
+               <h2 class="subheading">{{ .Description }}</h2>
+               <span class="meta">
+                 {{ partial "meta.html" .}}
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-1 col-md-9">
+                  {{ .Content }}
+                  {{ partial "comments.html" .}}
+                </div>
+                {{ if isset .Params "author" }}
+                  {{ $auth := (index .Site.Params.Authors .Params.author) }}
+                  <div class="col-lg-3 col-md-3 author">
+                    {{ if isset $auth "image" }}
+                      <div class="image-wrapper">
+                        <img src="{{ .Site.BaseURL }}/{{ $auth.image }}" alt="{{ $auth.name }} image" class="author-image" />
+                      </div>
+                    {{ else }}
+                      <div class="image-wrapper">
+                        <img src="{{ .Site.BaseURL }}/img/authors/avatar-placeholder.gif" alt="placeholder author image" class="author-image" />
+                      </div>
+                    {{ end }}
+
+                    <p style='font-size: 30px;font-weight: bold;'>Author</p>
+                    <p><b>Name:</b> {{ $auth.name }}</p>
+                    <p><b>About:</b><br/>{{ $auth.about }}</p>
+                  </div>
+                {{ end }}
+            </div>
+        </div>
+    </article>
+
+{{ partial "footer.html" .}}
