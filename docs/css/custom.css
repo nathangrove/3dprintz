@@ -1,0 +1,20 @@
+.author {
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 50px;
+}
+.author>.image-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.author>.image-wrapper>img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: -100px;
+}
+
+.featured .meta {
+  font-style: italic !important;
+}
