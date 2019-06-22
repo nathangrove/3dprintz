@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>budget on 3D Printz</title>
+    <link>https://3dprint.nathangrove.com/tags/budget/</link>
+    <description>Recent content in budget on 3D Printz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019  Nathan Grove</copyright>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://3dprint.nathangrove.com/tags/budget/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Workbench</title>
+      <link>https://3dprint.nathangrove.com/post/workbench/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://3dprint.nathangrove.com/post/workbench/</guid>
+      <description>As my first post, I wanted to show you my workbench where all the magic happens. I was looking around for a workbench I could just buy, but I never found exactly what I wanted at the price I wanted after 2 weeks of searching. I wanted 3 things: * Long enough to have a solder station, printer, and computer * A large light overhead * Have a working surface about counter high</description>
+    </item>
+    
+  </channel>
+</rss>
